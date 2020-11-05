@@ -51,7 +51,7 @@ user_pref("network.protocol-handler.expose.magnet", false);
 //Enable tracking protection
 user_pref("privacy.trackingprotection.enabled", true);
 //Set common user agent and platform, this one is used by Tor, hence quite common for the purpose
-user_pref("general.useragent.override", "Mozilla/5.0 (Windows NT 6.1; rv:52.0) Gecko/20100101 Firefox/52.0 ");
+user_pref("general.useragent.override", "Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0");
 user_pref("general.platform.override", "Win32");
 //Prevent WebRTC leak
 user_pref("media.peerconnection.ice.default_address_only", true);
