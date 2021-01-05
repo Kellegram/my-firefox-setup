@@ -1,4 +1,4 @@
-# my-firefox-setup
+# Kellegram's Firefox setup
 These are my files and guides related to how I setup firefox
 
 ## Adapting to your machine
