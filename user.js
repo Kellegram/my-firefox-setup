@@ -41,9 +41,6 @@ user_pref("toolkit.scrollbox.verticalScrollDistance", 2);
 user_pref("media.hardware-video-decoding.force-enabled", true);
 //"Remove" the annoying fullscreen notice
 user_pref("full-screen-api.warning.timeout", 0);
-//Add magnet protocol association
-user_pref("network.protocol-handler.expose.magnet", false);
-
 
 //Privacy tweaks go here
 
@@ -56,8 +53,6 @@ user_pref("general.platform.override", "Win32");
 //Prevent WebRTC leak
 user_pref("media.peerconnection.ice.default_address_only", true);
 user_pref("media.peerconnection.enabled", false); //disables webrtc completely
-//Disable HTTP referer
-user_pref("network.http.sendRefererHeader", 0);
 //Disable Captive portal testing
 user_pref("network.captive-portal-service.enabled", false);
 //Prevent tracking clicks
@@ -74,10 +69,6 @@ user_pref("media.navigator.enabled", false)
 user_pref("network.trr.mode", 2);
 //Disable webgl
 user_pref("webgl.disabled", true);
-//Disable WebAssembly
-user_pref("javascript.options.wasm", false);
-user_pref("javascript.options.wasm_baselinejit", false);
-user_pref("javascript.options.wasm_ionjit", false);
 //Disable prefetching
 user_pref("network.dns.disablePrefetch", true);
 user_pref("network.dns.disablePrefetchFromHTTPS", true);
