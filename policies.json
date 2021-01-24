@@ -5,6 +5,7 @@
     "DisableFirefoxStudies": true,
     "DisableFormHistory": true,
     "DisableMasterPasswordCreation": true,
+    "DisplayBookmarksToolbar": false,
     "DisablePasswordReveal": true,
     "DisablePocket": true,
     "DisableSetDesktopBackground": true,
