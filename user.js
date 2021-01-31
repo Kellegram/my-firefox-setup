@@ -1058,8 +1058,10 @@ user_pref("identity.fxaccounts.enabled", false); // Firefox Accounts & Sync [FF6
 user_pref("layers.acceleration.force-enabled", true);
 //Enable WebRender compositor
 user_pref("gfx.webrender.all", true);
- // [WINDOWS]
+// [WINDOWS]
 user_pref("gfx.direct2d.disabled", false);
+//Force enable hardware decoding
+user_pref("media.hardware-video-decoding.force-enabled", true);
 //Ensure other Pocket stuff is disabled just to be sure
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
 user_pref("browser.newtabpage.activity-stream.feeds.system.topstories", false);
@@ -1085,8 +1087,7 @@ user_pref("mousewheel.system_scroll_override_on_root_content.horizontal.factor",
 user_pref("mousewheel.system_scroll_override_on_root_content.vertical.factor", 175);
 user_pref("toolkit.scrollbox.horizontalScrollDistance", 6);
 user_pref("toolkit.scrollbox.verticalScrollDistance", 2);
-//Force enable hardware decoding
-user_pref("media.hardware-video-decoding.force-enabled", true);
+
 
 
 /* END: internal custom pref to test for syntax errors ***/
