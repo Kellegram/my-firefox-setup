@@ -2,6 +2,8 @@
 user_pref("layers.acceleration.force-enabled", true);
 //Enable WebRender compositor
 user_pref("gfx.webrender.all", true);
+ // [WINDOWS]
+user_pref("gfx.direct2d.disabled", true);
 //Disable disk cache, not worth it
 user_pref("browser.cache.disk.enable", false);
 //Ensure memory cache is enabled
