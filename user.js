@@ -1094,7 +1094,8 @@ user_pref("mousewheel.system_scroll_override_on_root_content.horizontal.factor",
 user_pref("mousewheel.system_scroll_override_on_root_content.vertical.factor", 175);
 user_pref("toolkit.scrollbox.horizontalScrollDistance", 6);
 user_pref("toolkit.scrollbox.verticalScrollDistance", 2);
-
+// Disable Picture in Picture
+user_pref("mmedia.videocontrols.picture-in-picture.video-toggle.enabled", false);
 
 
 /* END: internal custom pref to test for syntax errors ***/
