@@ -1,13 +1,10 @@
 # Kellegram's Firefox setup
-These are my files and guides related to how I setup firefox
+These are my files and guides related to how I setup firefox  
+  
+My user.js is made using [Arkenfox](https://github.com/arkenfox/user.js).  
+Please read their [wiki](https://github.com/arkenfox/user.js/wiki) for a lot of useful information.  
+My setup is designed with usability in mind, most ways of breaking sites were removed/modified. For privacy/less fingerprinting use [Tor](https://www.torproject.org/) or wait for my second user.js with more hardening.
 
-## Adapting to your machine
+## Adapting to your use
 
-There is a portion in my user.js that you need to change depending on your RAM.
-
-
-    //Define memory cache capacity(This number is based on 41297 - (41606 / (1 + ((RAM / 1.16) ^ 0.75))) where RAM is in gigabytes and result is in KB)
-    user_pref("browser.cache.memory.capacity", 36196);
- 
-Based on this, if you have 8 gigs of RAM, you would do: 41297 - (41606 / (1 + ((8 / 1.16) ^ 0.75))) = 33380.6866972  
-This is taken from ![ArchWiki](https://wiki.archlinux.org/index.php/Firefox/Tweaks#Turn_off_the_disk_cache).
+Coming soon
