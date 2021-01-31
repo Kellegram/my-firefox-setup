@@ -602,7 +602,7 @@ user_pref("webgl.enable-webgl2", false);
 
 /* 2031: disable autoplay of HTML5 media if you interacted with the site [FF78+]
  * 0=sticky (default), 1=transient, 2=user ***/
-user_pref("media.autoplay.blocking_policy", 2);
+user_pref("media.autoplay.blocking_policy", 1);
 
 /*** [SECTION 2200]: WINDOW MEDDLING & LEAKS / POPUPS ***/
 user_pref("_user.js.parrot", "2200 syntax error: the parrot's 'istory!");
