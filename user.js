@@ -1033,7 +1033,7 @@ user_pref("clipboard.autocopy", false); // disable autocopy default [LINUX]
 // user_pref("layout.spellcheckDefault", 2); // 0=none, 1-multi-line, 2=multi-line & single-line
 /* UX BEHAVIOR ***/
 user_pref("browser.backspace_action", 2); // 0=previous page, 1=scroll up, 2=do nothing
-user_pref("browser.tabs.closeWindowWithLastTab", false);
+//user_pref("browser.tabs.closeWindowWithLastTab", false);
 user_pref("browser.tabs.loadBookmarksInTabs", true); // open bookmarks in a new tab [FF57+]
 // user_pref("browser.urlbar.decodeURLsOnCopy", true); // see bugzilla 1320061 [FF53+]
 // user_pref("general.autoScroll", false); // middle-click enabling auto-scrolling [DEFAULT: false on Linux]
