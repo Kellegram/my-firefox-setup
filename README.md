@@ -6,5 +6,6 @@ Please read their [wiki](https://github.com/arkenfox/user.js/wiki) for a lot of 
 My setup is designed with usability in mind, most ways of breaking sites were removed/modified. For privacy/less fingerprinting use [Tor](https://www.torproject.org/) or wait for my second user.js with more hardening.
 
 ## Adapting to your use
+Change this to 0 if video sites like vimeo, etc. break for you. 0 is default.
 
-Coming soon
+    user_pref("network.http.referer.XOriginPolicy", 1);
