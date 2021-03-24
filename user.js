@@ -412,11 +412,6 @@ user_pref("_user.js.parrot", "1200 syntax error: the parrot's a stiff!");
 user_pref("security.ssl.require_safe_negotiation", true);
 /* 1203: enforce TLS 1.0 and 1.1 downgrades as session only */
 user_pref("security.tls.version.enable-deprecated", false);
-/* 1205: disable SSL Error Reporting
- * [1] https://firefox-source-docs.mozilla.org/browser/base/sslerrorreport/preferences.html ***/
-user_pref("security.ssl.errorReporting.automatic", false);
-user_pref("security.ssl.errorReporting.enabled", false);
-user_pref("security.ssl.errorReporting.url", "");
 /* 1206: disable TLS1.3 0-RTT (round-trip time) [FF51+] ***/
 user_pref("security.tls.enable_0rtt_data", false);
 
@@ -713,8 +708,6 @@ user_pref("extensions.postDownloadThirdPartyPrompt", false);
 /** DOWNLOADS ***/
 /* 2652: disable adding downloads to the system's "recent documents" list ***/
 user_pref("browser.download.manager.addToRecentDocs", false);
-/* 2653: disable hiding mime types (Options>General>Applications) not associated with a plugin ***/
-user_pref("browser.download.hide_plugins_without_extensions", false);
 
 /** EXTENSIONS ***/
 /* 2660: lock down allowed extension directories
