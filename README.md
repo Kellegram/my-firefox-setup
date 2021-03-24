@@ -9,3 +9,9 @@ My setup is designed with usability in mind, most ways of breaking sites were re
 Change this to 0 if video sites like vimeo, etc. break for you. 0 is default.
 
     user_pref("network.http.referer.XOriginPolicy", 1);
+
+
+Changelog:
+
+24/03/2021
+- Removed deprecated lines (need manual reset, check diffs)
