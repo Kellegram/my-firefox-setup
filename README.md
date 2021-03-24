@@ -11,7 +11,7 @@ Change this to 0 if video sites like vimeo, etc. break for you. 0 is default.
     user_pref("network.http.referer.XOriginPolicy", 1);
 
 
-Changelog:
+## Changelog:
 
-24/03/2021
+**24/03/2021**
 - Removed deprecated lines (need manual reset, check diffs)
