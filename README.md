@@ -12,6 +12,8 @@ Change this to 0 if video sites like vimeo, etc. break for you. 0 is default.
 
 
 ## Changelog:
+**06/04/2021**
+- Reset autoplay policy back to default (Need manual reset, check diff)
 
 **24/03/2021**
 - Removed deprecated lines (need manual reset, check diffs)
