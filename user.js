@@ -1084,7 +1084,10 @@ user_pref("mousewheel.system_scroll_override_on_root_content.vertical.factor", 1
 user_pref("toolkit.scrollbox.horizontalScrollDistance", 6);
 user_pref("toolkit.scrollbox.verticalScrollDistance", 2);
 // Disable Picture in Picture
-user_pref("mmedia.videocontrols.picture-in-picture.video-toggle.enabled", false);
+user_pref("media.videocontrols.picture-in-picture.video-toggle.enabled", false);
+// Enforce right click context menu appearing after right click release, not click. This is a problem on certain
+// window managers like i3 or xmonad where this gets set to false.
+user_pref("ui.context_menus.after_mouseup", true);
 
 
 /* END: internal custom pref to test for syntax errors ***/
