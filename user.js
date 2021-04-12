@@ -1047,13 +1047,9 @@ user_pref("identity.fxaccounts.enabled", false); // Firefox Accounts & Sync [FF6
  This might break if you are not updating drivers regularly (please do though)
  or on some specific hardware. In such case, reset these in about:config after removing
 */
-user_pref("layers.acceleration.force-enabled", true);
-user_pref("layers.gpu-process.force-enabled", true);
-user_pref("gfx.webrender.enabled", true);
 user_pref("gfx.webrender.all", true);
 user_pref("media.hardware-video-decoding.force-enabled", true);
 user_pref("media.ffmpeg.vaapi.enabled", true);
-user_pref("gfx.webrender.compositor", true);
 /*Can cause issues, you can enable it if you want*/
 //user_pref("gfx.webrender.compositor.force-enabled", true);
 // [WINDOWS]
