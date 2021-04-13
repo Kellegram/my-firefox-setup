@@ -12,6 +12,9 @@ Change this to 0 if video sites like vimeo, etc. break for you. 0 is default.
 
 
 ## Changelog:
+**14/04/2021
+- Disable the edit menu for adding bookmarks
+
 **12/04/2021**
 - Fixed a typo that prevented the PiP rule from applying
 - Added a rule that ensures expected behaviour of context menu when using certain window managers.
