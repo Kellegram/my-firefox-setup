@@ -1084,6 +1084,8 @@ user_pref("media.videocontrols.picture-in-picture.video-toggle.enabled", false);
 // Enforce right click context menu appearing after right click release, not click. This is a problem on certain
 // window managers like i3 or xmonad where this gets set to false.
 user_pref("ui.context_menus.after_mouseup", true);
+// Disable the edit menu for adding bookmarks
+user_pref("browser.bookmarks.editDialog.showForNewBookmarks", false);
 
 
 /* END: internal custom pref to test for syntax errors ***/
