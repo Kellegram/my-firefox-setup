@@ -732,6 +732,15 @@ user_pref(
  * [1] https://feeding.cloud.geek.nz/posts/tweaking-cookies-for-privacy-in-firefox/ ***/
 user_pref("network.cookie.thirdparty.sessionOnly", false);
 user_pref("network.cookie.thirdparty.nonsecureSessionOnly", true); // [FF58+]
+
+/* 2710: enable Enhanced Tracking Protection (ETP) in all windows
+ * [SETTING] Privacy & Security>Enhanced Tracking Protection>Custom>Tracking content
+ * [SETTING] to add site exceptions: Urlbar>ETP Shield
+ * [SETTING] to manage site exceptions: Options>Privacy & Security>Enhanced Tracking Protection>Manage Exceptions ***/
+user_pref("privacy.trackingprotection.enabled", true);
+/* 2711: enable various ETP lists ***/
+user_pref("privacy.trackingprotection.socialtracking.enabled", true);
+
 /* 2730: enforce no offline cache storage (appCache)
  * The API is easily fingerprinted, use the "storage" pref instead ***/
 user_pref("browser.cache.offline.storage.enable", false); // [FF71+] [DEFAULT: false FF84+]
