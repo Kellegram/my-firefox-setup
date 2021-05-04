@@ -52,7 +52,6 @@
       "network.IDN_show_punycode": true,
       "security.ssl.errorReporting.enabled": false
     },
-    "SSLVersionMin": "tls1.1",
     "SearchBar": "unified"
   }
 }
