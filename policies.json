@@ -11,11 +11,6 @@
     "DisableSetDesktopBackground": true,
     "DisableTelemetry": true,
     "DontCheckDefaultBrowser": true,
-    "EnableTrackingProtection": {
-      "Cryptomining": true,
-      "Fingerprinting": true,
-      "Value": true
-    },
     "FirefoxHome": {
       "Highlights": false,
       "Pocket": false,
