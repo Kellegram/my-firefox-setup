@@ -1021,9 +1021,6 @@ user_pref("startup.homepage_override_url", ""); // What's New page after updates
 // user_pref("browser.tabs.warnOnOpen", false);
 user_pref("full-screen-api.warning.delay", 0);
 user_pref("full-screen-api.warning.timeout", 0);
-/* APPEARANCE ***/
-// user_pref("browser.download.autohideButton", false); // [FF57+]
-// user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true); // [FF68+] allow userChrome/userContent
 /* CONTENT BEHAVIOR ***/
 // user_pref("accessibility.typeaheadfind", true); // enable "Find As You Type"
 user_pref("clipboard.autocopy", false); // disable autocopy default [LINUX]
@@ -1094,7 +1091,10 @@ user_pref("media.videocontrols.picture-in-picture.video-toggle.enabled", false);
 user_pref("ui.context_menus.after_mouseup", true);
 // Disable the edit menu for adding bookmarks
 user_pref("browser.bookmarks.editDialog.showForNewBookmarks", false);
-
+// Enable userchrome css stuff. Uncomment to enable !!!
+// user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+// user_pref("svg.context-properties.content.enabled", true);
+// user_pref("layers.acceleration.force-enabled", true);
 
 /* END: internal custom pref to test for syntax errors ***/
 user_pref(
