@@ -55,18 +55,6 @@ user_pref("_user.js.parrot", "0100 syntax error: the parrot's dead!");
 /* 0101: disable default browser check
  * [SETTING] General>Startup>Always check if Firefox is your default browser ***/
 user_pref("browser.shell.checkDefaultBrowser", false);
-/* 0102: set START page (0=blank, 1=home, 2=last visited page, 3=resume previous session)
- * [NOTE] Session Restore is not used in PB mode (0110) and is cleared with history (2803, 2804)
- * [SETTING] General>Startup>Restore previous session ***/
-user_pref("browser.startup.page", 0);
-/* 0103: set HOME+NEWWINDOW page
- * about:home=Activity Stream (default, see 0105), custom URL, about:blank
- * [SETTING] Home>New Windows and Tabs>Homepage and new windows ***/
-user_pref("browser.startup.homepage", "about:blank");
-/* 0104: set NEWTAB page
- * true=Activity Stream (default, see 0105), false=blank page
- * [SETTING] Home>New Windows and Tabs>New tabs ***/
-user_pref("browser.newtabpage.enabled", false);
 user_pref("browser.newtab.preload", false);
 /* 0105: disable Activity Stream stuff (AS)
  * AS is the default homepage/newtab in FF57+, based on metadata and browsing behavior.
@@ -1095,6 +1083,7 @@ user_pref("browser.bookmarks.editDialog.showForNewBookmarks", false);
 // user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 // user_pref("svg.context-properties.content.enabled", true);
 // user_pref("layers.acceleration.force-enabled", true);
+// user_pref("layout.css.backdrop-filter.enabled", true);
 
 /* END: internal custom pref to test for syntax errors ***/
 user_pref(
