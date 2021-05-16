@@ -579,7 +579,6 @@ user_pref("media.peerconnection.ice.proxy_only_if_behind_proxy", true); // [FF70
 user_pref("webgl.disabled", true);
 user_pref("webgl.enable-webgl2", false);
 /* 2012: limit WebGL ***/
-//user_pref("webgl.min_capability_mode", true);
 //user_pref("webgl.disable-fail-if-major-performance-caveat", true);
 
 /*** [SECTION 2200]: WINDOW MEDDLING & LEAKS / POPUPS ***/
@@ -678,6 +677,18 @@ user_pref("permissions.manager.defaultsUrl", "");
  * [SETUP-WEB] Might be undesirable for non-latin alphabet users since legitimate IDN's are also punycoded
  ***/
 user_pref("network.IDN_show_punycode", true);
+/* 2620: enforce PDFJS, disable PDFJS scripting [SETUP-CHROME]
+ * This setting controls if the option "Display in Firefox" is available in the setting below
+ *   and by effect controls whether PDFs are handled in-browser or externally ("Ask" or "Open With")
+ * PROS: pdfjs is lightweight, open source, and as secure/vetted as any pdf reader out there (more than most)
+ *   Exploits are rare (one serious case in seven years), treated seriously and patched quickly.
+ *   It doesn't break "state separation" of browser content (by not sharing with OS, independent apps).
+ *   It maintains disk avoidance and application data isolation. It's convenient. You can still save to disk.
+ * CONS: You may prefer a different pdf reader for security reasons
+ * CAVEAT: JS can still force a pdf to open in-browser by bundling its own code (rare)
+ * [SETTING] General>Applications>Portable Document Format (PDF) ***/
+user_pref("pdfjs.disabled", false); // [DEFAULT: false]
+user_pref("pdfjs.enableScripting", false); // [FF86+]
 /* 2623: disable permissions delegation [FF73+]
  * Currently applies to cross-origin geolocation, camera, mic and screen-sharing
  * permissions, and fullscreen requests. Disabling delegation means any prompts
