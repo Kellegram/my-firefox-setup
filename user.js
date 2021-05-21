@@ -1096,6 +1096,9 @@ user_pref("browser.bookmarks.editDialog.showForNewBookmarks", false);
 // user_pref("layers.acceleration.force-enabled", true);
 // user_pref("layout.css.backdrop-filter.enabled", true);
 
+// Make devtools dark
+user_pref("devtools.theme", "dark");
+
 /* END: internal custom pref to test for syntax errors ***/
 user_pref(
   "_user.js.parrot",
