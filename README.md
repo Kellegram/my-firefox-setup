@@ -12,6 +12,9 @@ Change this to 0 if video sites like vimeo, etc. break for you. 0 is default.
 
 
 ## Changelog:
+**21.05.2021**
+- Make devtools dark mode
+
 **14/04/2021
 - Disable the edit menu for adding bookmarks
 
