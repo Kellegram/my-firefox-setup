@@ -12,6 +12,10 @@ Change this to 0 if video sites like vimeo, etc. break for you. 0 is default.
 
 
 ## Changelog:
+**22.06.2021**
+- Removed as indicated in [arkenfox changelog](https://github.com/arkenfox/user.js/issues/1191)
+
+
 **21.05.2021**
 - Make devtools dark mode
 
