@@ -125,10 +125,6 @@ user_pref(
   "_user.js.parrot",
   "0300 syntax error: the parrot's not pinin' for the fjords!"
 );
-/* 0309: disable sending Flash crash reports ***/
-user_pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled", false);
-/* 0310: disable sending the URL of the website where a plugin crashed ***/
-user_pref("dom.ipc.plugins.reportCrashURL", false);
 /* 0320: disable about:addons' Recommendations pane (uses Google Analytics) ***/
 user_pref("extensions.getAddons.showPane", false); // [HIDDEN PREF]
 /* 0321: disable recommendations in about:addons' Extensions and Themes panes [FF68+] ***/
@@ -402,11 +398,6 @@ user_pref("security.tls.version.enable-deprecated", false);
 /* 1206: disable TLS1.3 0-RTT (round-trip time) [FF51+] ***/
 user_pref("security.tls.enable_0rtt_data", false);
 
-/** OCSP (Online Certificate Status Protocol)
-    #Required reading [#] https://scotthelme.co.uk/revocation-is-broken/ ***/
-/* 1210: enable OCSP Stapling
- * [1] https://blog.mozilla.org/security/2013/07/29/ocsp-stapling-in-firefox/ ***/
-user_pref("security.ssl.enable_ocsp_stapling", true);
 /* 1211: control when to use OCSP fetching (to confirm current validity of certificates)
  * 0=disabled, 1=enabled (default), 2=enabled for EV certificates only
  * OCSP (non-stapled) leaks information about the sites you visit to the CA (cert authority)
@@ -454,9 +445,6 @@ user_pref("security.pki.crlite_mode", 2);
 /** MIXED CONTENT ***/
 /* 1241: disable insecure passive content (such as images) on https pages [SETUP-WEB] ***/
 user_pref("security.mixed_content.block_display_content", true);
-/* 1243: block unencrypted requests from Flash on encrypted pages to mitigate MitM attacks [FF59+]
- * [1] https://bugzilla.mozilla.org/1190623 ***/
-user_pref("security.mixed_content.block_object_subrequest", true);
 /* 1244: enable HTTPS-Only mode [FF76+]
  * When "https_only_mode" (all windows) is true, "https_only_mode_pbm" (private windows only) is ignored
  * [SETTING] to add site exceptions: Page Info>HTTPS-Only mode>On/Off/Off temporarily
@@ -549,11 +537,6 @@ user_pref(
   "_user.js.parrot",
   "1800 syntax error: the parrot's pushing up daisies!"
 );
-/* 1803: disable Flash plugin
- * 0=deactivated, 1=ask, 2=enabled
- * ESR52.x is the last branch to *fully* support NPAPI, FF52+ stable only supports Flash
- * [NOTE] You can still override individual sites via site permissions ***/
-user_pref("plugin.state.flash", 0);
 
 /*** [SECTION 2000]: MEDIA / CAMERA / MIC ***/
 user_pref("_user.js.parrot", "2000 syntax error: the parrot's snuffed it!");
