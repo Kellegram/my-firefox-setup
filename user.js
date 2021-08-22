@@ -127,11 +127,6 @@ user_pref(
   "0300 syntax error: the parrot's not pinin' for the fjords!"
 );
 
-/* 0302: disable auto-INSTALLING Firefox updates via a background service [FF90+] [WINDOWS]
- * [SETTING] General>Firefox Updates>Automatically install updates>When Firefox is not running
- * [1] https://support.mozilla.org/kb/enable-background-updates-firefox-windows ***/
-user_pref("app.update.background.scheduling.enabled", false);
-
 /* 0320: disable about:addons' Recommendations pane (uses Google Analytics) ***/
 user_pref("extensions.getAddons.showPane", false); // [HIDDEN PREF]
 /* 0321: disable recommendations in about:addons' Extensions and Themes panes [FF68+] ***/
