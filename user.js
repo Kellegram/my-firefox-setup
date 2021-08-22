@@ -63,6 +63,7 @@ user_pref("browser.newtab.preload", false);
 /* 0105a: disable Activity Stream telemetry ***/
 user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
 user_pref("browser.newtabpage.activity-stream.telemetry", false);
+user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false); // [FF83+]
 /* 0105b: disable Activity Stream Snippets
  * Runs code received from a server (aka Remote Code Execution) and sends information back to a metrics server
  * [1] https://abouthome-snippets-service.readthedocs.io/ ***/
@@ -125,6 +126,12 @@ user_pref(
   "_user.js.parrot",
   "0300 syntax error: the parrot's not pinin' for the fjords!"
 );
+
+/* 0302: disable auto-INSTALLING Firefox updates via a background service [FF90+] [WINDOWS]
+ * [SETTING] General>Firefox Updates>Automatically install updates>When Firefox is not running
+ * [1] https://support.mozilla.org/kb/enable-background-updates-firefox-windows ***/
+user_pref("app.update.background.scheduling.enabled", false);
+
 /* 0320: disable about:addons' Recommendations pane (uses Google Analytics) ***/
 user_pref("extensions.getAddons.showPane", false); // [HIDDEN PREF]
 /* 0321: disable recommendations in about:addons' Extensions and Themes panes [FF68+] ***/
@@ -297,8 +304,6 @@ user_pref("network.http.altsvc.oe", false);
  * as a remote Tor node will handle the DNS request
  * [1] https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers ***/
 user_pref("network.proxy.socks_remote_dns", true);
-/* 0708: disable FTP [FF60+] ***/
-// user_pref("network.ftp.enabled", false);
 /* 0709: disable using UNC (Uniform Naming Convention) paths [FF61+]
  * [SETUP-CHROME] Can break extensions for profiles on network shares
  * [1] https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/26424 ***/
@@ -358,6 +363,10 @@ user_pref("signon.autofillForms", false);
 user_pref("signon.formlessCapture.enabled", false);
 /* 0912: limit (or disable) HTTP authentication credentials dialogs triggered by sub-resources [FF41+] ***/
 user_pref("network.auth.subresource-http-auth-allow", 1);
+/* 0913: disable automatic authentication on Microsoft sites [FF91+] [WINDOWS 10+]
+ * [SETTING] Privacy & Security>Logins and Passwords>Allow Windows single sign-on for...
+ * [1] https://support.mozilla.org/kb/windows-sso ***/
+user_pref("network.http.windows-sso.enabled", false);
 
 /*** [SECTION 1000]: CACHE / SESSION (RE)STORE / FAVICONS
      Cache tracking/fingerprinting techniques [1][2][3] require a cache. Disabling disk (1001)
@@ -610,12 +619,6 @@ user_pref(
 );
 /* 2502: disable Battery Status API ***/
 user_pref("dom.battery.enabled", false);
-/* 2505: disable media device enumeration [FF29+]
- * [NOTE] media.peerconnection.enabled should also be set to false (see 2001) ***/
-user_pref("media.navigator.enabled", false);
-/* 2510: disable Web Audio API [FF51+]
- * [1] https://bugzilla.mozilla.org/1288359 ***/
-user_pref("dom.webaudio.enabled", false);
 
 /*** [SECTION 2600]: MISCELLANEOUS ***/
 user_pref(
@@ -702,7 +705,7 @@ user_pref("extensions.autoDisableScopes", 15); // [DEFAULT: 15]
 user_pref("security.csp.enable", true); // [DEFAULT: true]
 /* 2684: enforce a security delay on some confirmation dialogs such as install, open/save
  * [1] https://www.squarefree.com/2004/07/01/race-conditions-in-security-dialogs/ ***/
-user_pref("security.dialog_enable_delay", 700);
+user_pref("security.dialog_enable_delay", 1000);
 
 user_pref(
   "_user.js.parrot",
@@ -723,9 +726,6 @@ user_pref("privacy.trackingprotection.enabled", true);
 /* 2711: enable various ETP lists ***/
 user_pref("privacy.trackingprotection.socialtracking.enabled", true);
 
-/* 2730: enforce no offline cache storage (appCache)
- * The API is easily fingerprinted, use the "storage" pref instead ***/
-user_pref("browser.cache.offline.storage.enable", false); // [FF71+] [DEFAULT: false FF84+]
 /* 2760: enable Local Storage Next Generation (LSNG) [FF65+] ***/
 user_pref("dom.storage.next_gen", true);
 
