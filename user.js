@@ -525,16 +525,6 @@ user_pref("privacy.donottrackheader.enabled", true);
      [4] https://github.com/stoically/temporary-containers/wiki
 ***/
 user_pref("_user.js.parrot", "1700 syntax error: the parrot's bit the dust!");
-/* 1701: enable Container Tabs setting in preferences (see 1702) [FF50+]
- * [1] https://bugzilla.mozilla.org/1279029 ***/
-user_pref("privacy.userContext.ui.enabled", true);
-/* 1702: enable Container Tabs [FF50+]
- * [SETTING] General>Tabs>Enable Container Tabs ***/
-user_pref("privacy.userContext.enabled", true);
-/* 1703: set behaviour on "+ Tab" button to display container menu on left click [FF74+]
- * [NOTE] The menu is always shown on long press and right click
- * [SETTING] General>Tabs>Enable Container Tabs>Settings>Select a container for each new tab ***/
-// user_pref("privacy.userContext.newTabContainerOnLeftClick.enabled", true);
 
 /*** [SECTION 1800]: PLUGINS ***/
 user_pref(
